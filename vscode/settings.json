@@ -1,0 +1,45 @@
+{
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.lineNumbers": "relative",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "rust-client.channel": "stable",
+  "keyboard.dispatch": "keyCode",
+  "vim.easymotion": true,
+  "vim.easymotionkeys": "qwertyuiopasdfghjklzxcvbnm",
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-w>": false
+  },
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<C-e>"
+      ],
+      "after": [
+        "<C-u>"
+      ]
+    },
+    {
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "y",
+        "$"
+      ]
+    },
+    {
+      "before": [
+        "t"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
+    }
+  ],
+  "window.zoomLevel": 0
+}
