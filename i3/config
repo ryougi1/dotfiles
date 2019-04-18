@@ -5,7 +5,7 @@
 set $mod Mod4
 
 # MONITOR SETUP
-exec --no-startup-id xrandr --output HDMI-0  --auto --left-of DVI-D-0
+exec --no-startup-id xrandr --output HDMI-1 --auto --left-of DVI-D-1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -41,10 +41,7 @@ bindsym $mod+Shift+q kill
 # instead of dmenu, start rofi
 set $bg-color&amp;amp;amp;nbsp;&amp;amp;amp;nbsp; #2f343f
 set $text-color #f3f4f5
-bindsym $mod+d exec rofi -show run -lines 20 -eh 1.3 -opacity "90" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$text-color" -hlfg "$bg-color" -font "System San Francisco Display 10"
-# bindsym $mod+d exec rofi -show run -lines 20 -eh 1.3 -opacity "85" -bw 0 -font "System San Francisco Display 10"
-# bindsym $mod+d exec rofi -show run -lines 2 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc"$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Fransisco Display 18"
-
+bindsym $mod+d exec rofi -show run -lines 5 -eh 1.3 -opacity "70" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$text-color" -hlfg "$bg-color" -font "System San Francisco Display 10"
 
 # change focus
 bindsym $mod+h focus left
@@ -59,10 +56,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+odiaeresis move right
+bindsym $mod+Shifti+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -97,14 +94,14 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # ALIASES
-set $workspace1 "1:  "
-# set $workspace2 "2: "
+set $workspace1 "1: "
+set $workspace2 "2: "
 
 # switch to workspace
 # bindsym $mod+1 workspace 1
 bindsym $mod+1 workspace $workspace1
-bindsym $mod+2 workspace 2
-# bindsym $mod+2 workspace $workspace2
+# bindsym $mod+2 workspace 2
+bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
@@ -117,8 +114,8 @@ bindsym $mod+0 workspace 10
 # move focused container to workspace
 #bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace 2
-#bindsym $mod+Shift+2 move container to workspace $workspace2
+#bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
@@ -186,10 +183,10 @@ bindsym $mod+n move workspace to output left
 bindsym $mod+m move workspace to output right
 
 # STARTUP
-exec --no-startup-id compton
-exec_always feh --bg-scale ~/Pictures/bg.jpg
+#exec --no-startup-id compton 
+exec_always feh --bg-scale ~/Pictures/wp.jpg
+#exec_always compton
 #exec --no-startup-id betterlockscreen -w
-#assign [class=Gnome-terminal] $workspace1
 
 
 

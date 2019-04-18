@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/jamesg/.oh-my-zsh"
+  export ZSH="/home/ryougi1/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -94,17 +94,28 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Exports 
-export http_proxy=http://wwwproxy.se.axis.com:3128
-export HTTP_PROXY=http://wwwproxy.se.axis.com:3128/
-export https_proxy=http://wwwproxy.se.axis.com:3128
-export HTTPS_PROXY=http://wwwproxy.se.axis.com:3128/
-export npm_config_proxy=http://wwwproxy.se.axis.com:3128/
-export npm_config_http_proxy=http://wwwproxy.se.axis.com:3128
-export npm_config_https_proxy=http://wwwproxy.se.axis.com:3128/
-export PATH=$PATH:~/Debug/depot_tools
-export PATH="$HOME/.cargo/bin:$PATH"
-alias d8=~/Debug/v8/v8/out.gn/x64.optdebug/d8
-alias export D8_PATH="~/Debug/v8/v8/out.gn/x64.optdebug"
+# Only work work 
+#export http_proxy=http://wwwproxy.se.axis.com:3128
+#export HTTP_PROXY=http://wwwproxy.se.axis.com:3128/
+#export https_proxy=http://wwwproxy.se.axis.com:3128
+#export HTTPS_PROXY=http://wwwproxy.se.axis.com:3128/
+#export npm_config_proxy=http://wwwproxy.se.axis.com:3128/
+#export npm_config_http_proxy=http://wwwproxy.se.axis.com:3128
+#export npm_config_https_proxy=http://wwwproxy.se.axis.com:3128/
 
+# For V8 debug
+#export PATH=$PATH:~/Debug/depot_tools
+#export PATH="$HOME/.cargo/bin:$PATH"
+#alias d8=~/Debug/v8/v8/out.gn/x64.optdebug/d8
+#alias export D8_PATH="~/Debug/v8/v8/out.gn/x64.optdebug"
+
+# For Agnoster Terminal
+# NOTE: Some additional font files required, see https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a
 eval `dircolors ~/.dir_colors/dircolors`
+
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
+
