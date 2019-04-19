@@ -109,6 +109,10 @@ source $ZSH/oh-my-zsh.sh
 #alias d8=~/Debug/v8/v8/out.gn/x64.optdebug/d8
 #alias export D8_PATH="~/Debug/v8/v8/out.gn/x64.optdebug"
 
+# VIM
+# XON/XOFF OFF
+stty -ixon
+
 # For Agnoster Terminal
 # NOTE: Some additional font files required, see https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a
 eval `dircolors ~/.dir_colors/dircolors`
