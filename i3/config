@@ -1,7 +1,7 @@
 # James Gu i3 config file
 #
 # Uses:
-# Rofi, feh, Font-Awesome
+# Rofi, Feh, Font-Awesome, Compton, i3blocks
 
 # Mod key is "Windows" key
 set $mod Mod4
@@ -29,8 +29,6 @@ bindsym $mod+q kill
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
 # Instead of dmenu, start rofi
-set $bg-color&amp;amp;amp;nbsp;&amp;amp;amp;nbsp; #2f343f
-set $text-color #f3f4f5
 bindsym $mod+d exec rofi -show run -lines 5 -theme solarized 
 
 # change focus
@@ -150,7 +148,7 @@ client.urgent $urgent-bg-color $urgent-bg-color $text-color #00ff00
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3blocks
 }
 
 bindsym $mod+shift+x exec i3lock
