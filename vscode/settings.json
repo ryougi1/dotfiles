@@ -17,31 +17,16 @@
   },
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "<C-e>"
-      ],
-      "after": [
-        "<C-u>"
-      ]
+      "before": ["<C-e>"],
+      "after": ["<C-u>"]
     },
     {
-      "before": [
-        "Y"
-      ],
-      "after": [
-        "y",
-        "$"
-      ]
+      "before": ["Y"],
+      "after": ["y", "$"]
     },
     {
-      "before": [
-        "t"
-      ],
-      "after": [
-        "<leader>",
-        "<leader>",
-        "s"
-      ]
+      "before": ["t"],
+      "after": ["<leader>", "<leader>", "s"]
     }
   ],
   "window.zoomLevel": 0,

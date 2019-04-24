@@ -1,0 +1,4 @@
+Rebinding CAPS:
+
+Edit /usr/share/X11/xkb/symbols/pc
+Change key <CAPS> { [Caps_Lock] }; to key <CAPS> { [Escape] }; 

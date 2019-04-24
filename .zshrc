@@ -2,19 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/jamesg/.oh-my-zsh"
+  export ZSH="/home/ryougi1/.oh-my-zsh"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# Set name of the theme to load
 ZSH_THEME="agnoster"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -62,10 +53,10 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-plugins=(zsh-syntax-highlighting)
-plugins=(zsh-autosuggestions)
-
+plugins=(
+git
+zsh-autosuggestions
+)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -94,17 +85,32 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Exports 
-export http_proxy=http://wwwproxy.se.axis.com:3128
-export HTTP_PROXY=http://wwwproxy.se.axis.com:3128/
-export https_proxy=http://wwwproxy.se.axis.com:3128
-export HTTPS_PROXY=http://wwwproxy.se.axis.com:3128/
-export npm_config_proxy=http://wwwproxy.se.axis.com:3128/
-export npm_config_http_proxy=http://wwwproxy.se.axis.com:3128
-export npm_config_https_proxy=http://wwwproxy.se.axis.com:3128/
-export PATH=$PATH:~/Debug/depot_tools
-export PATH="$HOME/.cargo/bin:$PATH"
-alias d8=~/Debug/v8/v8/out.gn/x64.optdebug/d8
-alias export D8_PATH="~/Debug/v8/v8/out.gn/x64.optdebug"
+# Only work work 
+#export http_proxy=http://wwwproxy.se.axis.com:3128
+#export HTTP_PROXY=http://wwwproxy.se.axis.com:3128/
+#export https_proxy=http://wwwproxy.se.axis.com:3128
+#export HTTPS_PROXY=http://wwwproxy.se.axis.com:3128/
+#export npm_config_proxy=http://wwwproxy.se.axis.com:3128/
+#export npm_config_http_proxy=http://wwwproxy.se.axis.com:3128
+#export npm_config_https_proxy=http://wwwproxy.se.axis.com:3128/
 
+# For V8 debug
+#export PATH=$PATH:~/Debug/depot_tools
+#export PATH="$HOME/.cargo/bin:$PATH"
+#alias d8=~/Debug/v8/v8/out.gn/x64.optdebug/d8
+#alias export D8_PATH="~/Debug/v8/v8/out.gn/x64.optdebug"
+
+# VIM
+# XON/XOFF OFF
+stty -ixon
+
+# For Agnoster Terminal
+# NOTE: Some additional font files required, see https://gist.github.com/renshuki/3cf3de6e7f00fa7e744a
 eval `dircolors ~/.dir_colors/dircolors`
+
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
+
