@@ -1,0 +1,43 @@
+OS: Ubuntu 18.04.2 LTS x86_64
+Shell: zsh 5.4.2
+WM: i3
+Terminal: gnome-terminal (want to try termite?)
+
+PROGRAMS & OTHERS: 
+i3:
+    Fonts: Font-Awesome
+    Composite manager: Compton
+    Application launcher: Rofi (conf in .Xresources)
+    Image viewer/desktop wp manager: Feh
+
+Ohmyzsh:
+    Theme: agnoster
+        Agnoster uses Powerline fonts and solarized theme (see below)
+    Autoruns:
+        Neofetch 
+    Plugins: 
+
+#################################################################
+Rebinding CAPS:
+
+Edit /usr/share/X11/xkb/symbols/pc
+Change key <CAPS> { [Caps_Lock] }; to key <CAPS> { [Escape] }; 
+
+#################################################################
+Powerline fonts: 
+Both files found in .fonts folder 
+Put: 
+PowerlineSymbols.otf in ~/.fonts/
+Clean fonts cache (necessary?) using fc-cache -vf ~/.fonts/ 
+10-powerline-symbols.conf in ~/.config/fontconfig/conf.d/
+
+Font-Awesome: 
+File in .fonts folder, move to ~/.fonts/
+
+#################################################################
+Solarized theme: 
+dconf is required: sudo apt-get install dconf-cli
+git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solarized
+cd ~/.solarized
+./install.sh
+In .zshrc put: eval `dircolors ~/.dir_colors/dircolors`

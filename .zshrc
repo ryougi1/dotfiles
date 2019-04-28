@@ -114,3 +114,4 @@ prompt_context() {
   fi
 }
 
+neofetch
