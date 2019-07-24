@@ -10,22 +10,40 @@
   "vim.easymotionkeys": "qwertyuiopasdfghjklzxcvbnm",
   "vim.leader": "<space>",
   "vim.handleKeys": {
-    "<C-w>": false
+    "<C-w>": false,
+    "<C-c": false,
+    "<C-v>": false
   },
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<C-e>"],
-      "after": ["<C-u>"]
+      "before": [
+        "<C-e>"
+      ],
+      "after": [
+        "<C-u>"
+      ]
     },
     {
-      "before": ["Y"],
-      "after": ["y", "$"]
+      "before": [
+        "Y"
+      ],
+      "after": [
+        "y",
+        "$"
+      ]
     },
     {
-      "before": ["t"],
-      "after": ["<leader>", "<leader>", "s"]
+      "before": [
+        "t"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
     }
   ],
   "window.zoomLevel": 0,
-  "sync.gist": "c1b390bd26bd63fd74f8e9c4c2496088"
+  "sync.gist": "c1b390bd26bd63fd74f8e9c4c2496088",
+  "java.configuration.checkProjectSettingsExclusions": false
 }

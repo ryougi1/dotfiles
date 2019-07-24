@@ -4,8 +4,12 @@
 # Path to your oh-my-zsh installation.
   export ZSH="/home/ryougi1/.oh-my-zsh"
 
+
 # Set name of the theme to load
 ZSH_THEME="agnoster"
+
+# Yarn 
+export PATH="$PATH:/opt/yarn-1.16.0/bin" 
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -84,6 +88,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias eclipse="cd ~/eclipse/java-2019-03/eclipse && nohup ./eclipse &"
 
 # Only work work 
 #export http_proxy=http://wwwproxy.se.axis.com:3128
