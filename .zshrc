@@ -3,7 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 #  export ZSH="/home/ryougi1/.oh-my-zsh"
-  export ZSH="/home/jamesg/.oh-my-zsh"
+  export ZSH="/home/james/.oh-my-zsh"
 
 
 # Set name of the theme to load
@@ -60,7 +60,7 @@ export PATH="$PATH:/opt/yarn-1.16.0/bin"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 git
-zsh-autosuggestions
+#zsh-autosuggestions
 )
 source $ZSH/oh-my-zsh.sh
 
@@ -101,10 +101,10 @@ alias eclipse="cd ~/eclipse/java-2019-03/eclipse && nohup ./eclipse &"
 # export npm_config_https_proxy=http://wwwproxy.se.axis.com:3128/
 
 # For V8 debug
-export PATH=$PATH:~/Debug/depot_tools
-export PATH="$HOME/.cargo/bin:$PATH"
-alias d8=~/Debug/v8/v8/out.gn/x64.optdebug/d8
-alias export D8_PATH="~/Debug/v8/v8/out.gn/x64.optdebug"
+#export PATH=$PATH:~/Debug/depot_tools
+#export PATH="$HOME/.cargo/bin:$PATH"
+#alias d8=~/Debug/v8/v8/out.gn/x64.optdebug/d8
+#alias export D8_PATH="~/Debug/v8/v8/out.gn/x64.optdebug"
 
 # VIM
 # XON/XOFF OFF
