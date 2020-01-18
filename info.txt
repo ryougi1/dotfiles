@@ -41,3 +41,7 @@ git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git ~/.solar
 cd ~/.solarized
 ./install.sh
 In .zshrc put: eval `dircolors ~/.dir_colors/dircolors`
+
+#################################################################
+Intellij bash gets put in dir /usr/bin to work with rofi
+

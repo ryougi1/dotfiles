@@ -90,6 +90,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias eclipse="cd ~/eclipse/java-2019-03/eclipse && nohup ./eclipse &"
+alias volset50="amixer -D pulse set Master 50%"
+alias volset75="amixer -D pulse set Master 75%"
+alias voltoggle="amixer -D pulse set Master toggle"
+alias touchoff="synclient TouchpadOff=1"
+alias touchon="synclient TouchpadOff=0"
 
 # Only work work 
 # export http_proxy=http://wwwproxy.se.axis.com:3128
