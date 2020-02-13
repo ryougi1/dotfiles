@@ -5,12 +5,11 @@
 #  export ZSH="/home/ryougi1/.oh-my-zsh"
   export ZSH="/home/james/.oh-my-zsh"
 
-
 # Set name of the theme to load
 ZSH_THEME="agnoster"
 
-# Yarn 
-export PATH="$PATH:/opt/yarn-1.16.0/bin" 
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -48,7 +47,7 @@ export PATH="$PATH:/opt/yarn-1.16.0/bin"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -64,12 +63,14 @@ git
 )
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+#FIX LATER
+export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre:$PATH"
+
+# Yarn 
+#export PATH="$PATH:/opt/yarn-1.16.0/bin" 
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -86,24 +87,16 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias eclipse="cd ~/eclipse/java-2019-03/eclipse && nohup ./eclipse &"
+# alias eclipse="cd ~/eclipse/java-2019-03/eclipse && nohup ./eclipse &"
 alias volset50="amixer -D pulse set Master 50%"
 alias volset75="amixer -D pulse set Master 75%"
 alias voltoggle="amixer -D pulse set Master toggle"
-alias touchoff="synclient TouchpadOff=1"
-alias touchon="synclient TouchpadOff=0"
-
-# Only work work 
-# export http_proxy=http://wwwproxy.se.axis.com:3128
-# export HTTP_PROXY=http://wwwproxy.se.axis.com:3128/
-# export https_proxy=http://wwwproxy.se.axis.com:3128
-# export HTTPS_PROXY=http://wwwproxy.se.axis.com:3128/
-# export npm_config_proxy=http://wwwproxy.se.axis.com:3128/
-# export npm_config_http_proxy=http://wwwproxy.se.axis.com:3128
-# export npm_config_https_proxy=http://wwwproxy.se.axis.com:3128/
+alias touchoff='xinput disable "DLL07BF:01 06CB:7A13 Touchpad"'
+alias touchon='xinput enable "DLL07BF:01 06CB:7A13 Touchpad"'
+alias cdsignage="cd ~/Projects/afry-signage/"
+alias cdcoursera="cd ~/IdeaProjects/Course1/"
 
 # For V8 debug
 #export PATH=$PATH:~/Debug/depot_tools
@@ -126,3 +119,4 @@ prompt_context() {
 }
 
 neofetch
+touchoff

@@ -1,23 +1,46 @@
 {
+  "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme Palenight High Contrast",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.lineNumbers": "relative",
+  "editor.lineNumbers": "on",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
-  "rust-client.channel": "stable",
-  "keyboard.dispatch": "keyCode",
+  "editor.tabSize": 2,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 70,
+  "editor.wrappingIndent": "same",
+  "eslint.run": "onSave",
+  "eslint.validate": [
+    "javascript",
+    "typescript"
+  ],
+  "javascript.preferences.quoteStyle": "single",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "keyboard.dispatch": "keyCode", //CAPS
+  "vim.textwidth": 70,
   "vim.easymotion": true,
-  "vim.easymotionkeys": "qwertyuiopasdfghjklzxcvbnm",
+  "vim.easymotionKeys": "qwertyuiopasdfghjklzxcvbnm",
   "vim.leader": "<space>",
   "vim.handleKeys": {
+    "<C-a>": false,
     "<C-w>": false,
-    "<C-c": false,
-    "<C-v>": false,
-    "<C-a>": false
+    "<C-h>": false
   },
   "vim.normalModeKeyBindings": [
     {
-      "before": [
+      "before": [ //Easymotion
+        "f"
+      ],
+      "after": [
+        "<leader>",
+        "<leader>",
+        "s"
+      ]
+    },
+    {
+      "before": [ //Scroll up
         "<C-e>"
       ],
       "after": [
@@ -25,30 +48,29 @@
       ]
     },
     {
-      "before": [
+      "before": [ //Yank til EOL
         "Y"
       ],
       "after": [
         "y",
         "$"
       ]
-    },
-    {
-      "before": [
-        "t"
-      ],
-      "after": [
-        "<leader>",
-        "<leader>",
-        "s"
-      ]
     }
   ],
-  "colorize.languages": [
-    "javascript",
-    // ...
-  ],
-  "window.zoomLevel": 0,
-  "sync.gist": "c1b390bd26bd63fd74f8e9c4c2496088",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "java.configuration.checkProjectSettingsExclusions": false,
+  "cSpell.userWords": [
+    "CIDBZ",
+    "CKRTI",
+    "NRLI",
+    "ZPBNCF",
+    "ZUYLN",
+    "afrysignagedatabase",
+    "afrysignagedatabasecluster",
+    "aftvmedia",
+    "airbnb",
+    "secretsmanager"
+  ],
+  "editor.detectIndentation": false
 }

@@ -7,8 +7,8 @@
 set $mod Mod4
 
 # Dual monitor setup, will be different
-#exec --no-startup-id xrandr --output HDMI-1 --auto --left-of DVI-D-1
-#exec --no-startup-id xrandr --output HDMI-0  --auto --left-of DVI-D-0
+exec --no-startup-id xrandr --output eDP-1 --auto --right-of DP-1-3
+exec --no-startup-id xrandr --output DP-1-3 --auto --left-of eDP1 
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
