@@ -1,8 +1,8 @@
+let mapleader=","
 set easymotion
 
 :nnoremap Y y$
 :nnoremap <c-e> <c-u>
-" let g:EasyMotion_leader_key = '<Leader>'
 " :noremap f <Leader><Leader>f{char}
 " :noremap F <Leader><Leader>F{char}
 " :nnoremap f <Plug>(easymotion-prefix)

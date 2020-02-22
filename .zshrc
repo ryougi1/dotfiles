@@ -66,9 +66,6 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-#FIX LATER
-export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre:$PATH"
-
 # Yarn 
 #export PATH="$PATH:/opt/yarn-1.16.0/bin" 
 
@@ -93,10 +90,15 @@ export PATH="/usr/lib/jvm/java-1.8.0-openjdk-amd64/jre:$PATH"
 alias volset50="amixer -D pulse set Master 50%"
 alias volset75="amixer -D pulse set Master 75%"
 alias voltoggle="amixer -D pulse set Master toggle"
+alias vol="pavucontrol &"
+
 alias touchoff='xinput disable "DLL07BF:01 06CB:7A13 Touchpad"'
 alias touchon='xinput enable "DLL07BF:01 06CB:7A13 Touchpad"'
+
 alias cdsignage="cd ~/Projects/afry-signage/"
 alias cdcoursera="cd ~/IdeaProjects/Course1/"
+
+alias gnomecc="env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
 
 # For V8 debug
 #export PATH=$PATH:~/Debug/depot_tools
@@ -119,4 +121,3 @@ prompt_context() {
 }
 
 neofetch
-touchoff
