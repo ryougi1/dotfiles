@@ -87,6 +87,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias eclipse="cd ~/eclipse/java-2019-03/eclipse && nohup ./eclipse &"
+# alias monon="xrandr --output DP-2-1 --auto --left-of eDP-1"
 alias volset50="amixer -D pulse set Master 50%"
 alias volset75="amixer -D pulse set Master 75%"
 alias voltoggle="amixer -D pulse set Master toggle"
@@ -95,10 +96,12 @@ alias vol="pavucontrol &"
 alias touchoff='xinput disable "DLL07BF:01 06CB:7A13 Touchpad"'
 alias touchon='xinput enable "DLL07BF:01 06CB:7A13 Touchpad"'
 
-alias cdsignage="cd ~/Projects/afry-signage/"
-alias cdcoursera="cd ~/IdeaProjects/Course1/"
+alias cdsb="cd ~/Projects/afry-signage-backend/"
+alias cdsdp="cd ~/Projects/afry-signage-dp/"
+alias cdcoursera="cd ~/IdeaProjects/Functional_Programming_Scala/Design"
 
 alias gnomecc="env XDG_CURRENT_DESKTOP=GNOME gnome-control-center"
+alias avdpixel="cd ~/Android/Sdk/emulator && ./emulator -avd PixelXL"
 
 # For V8 debug
 #export PATH=$PATH:~/Debug/depot_tools
@@ -119,5 +122,3 @@ prompt_context() {
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
 }
-
-neofetch

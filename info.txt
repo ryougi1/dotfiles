@@ -1,21 +1,15 @@
-OS: Ubuntu 18.04.2 LTS x86_64
-Shell: zsh 5.4.2
-WM: i3
-Terminal: gnome-terminal (want to try termite?)
-
-PROGRAMS & OTHERS: 
-i3:
-    Fonts: Font-Awesome
-    Composite manager: Compton
-    Application launcher: Rofi (conf in .Xresources)
-    Image viewer/desktop wp manager: Feh
+OS:		Ubuntu 18.04.2 LTS x86_64
+Shell: 		zsh 5.4.2
+WM: 			i3-gaps
+Terminal: 		x-terminal 
+Fonts: 			Font-Awesome, Powerline
+Composite manager: 	Compton
+Application launcher: 	Rofi (conf in .Xresources)
+Img/Desktop WP manager: Feh
+Terminal prog: 		Neofetch, Cava, Ytop
 
 Ohmyzsh:
-    Theme: agnoster
-        Agnoster uses Powerline fonts and solarized theme (see below)
-    Autoruns:
-        Neofetch 
-    Plugins: 
+    Theme: agnoster. Agnoster uses Powerline fonts and solarized theme (see below)
 
 #################################################################
 Rebinding CAPS:
